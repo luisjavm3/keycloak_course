@@ -24,7 +24,8 @@
       "mainClass": "com.appsdeveloperblog.ws.api.discoveryservice.DiscoveryServiceApplication",
       "projectName": "DiscoveryService",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=64706 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=DiscoveryService"
     },
     {
       "type": "java",
@@ -34,7 +35,8 @@
       "mainClass": "co.luisjavm3.api_gateway.ApiGatewayApplication",
       "projectName": "api-gateway",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=64720 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=api-gateway"
     },
     {
       "type": "java",
@@ -44,7 +46,8 @@
       "mainClass": "co.luisjavm3.resource_server.ResourceServerApplication",
       "projectName": "resource-server",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=64728 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=resource-server"
     },
     {
       "type": "java",
@@ -63,6 +66,26 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.appsdeveloperblog.ws.api.albums.AlbumsApplication",
       "projectName": "albums-resource-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PhotosApplication<photos>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.appsdeveloperblog.ws.api.photos.PhotosApplication",
+      "projectName": "photos",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AlbumsApplication<albums>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.appsdeveloperblog.ws.api.albums.AlbumsApplication",
+      "projectName": "albums",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
