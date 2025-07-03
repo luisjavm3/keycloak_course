@@ -1,0 +1,70 @@
+{
+  // Use IntelliSense para saber los atributos posibles.
+  // Mantenga el puntero para ver las descripciones de los existentes atributos.
+  // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "PhotosApplication",
+      "request": "launch",
+      "mainClass": "com.appsdeveloperblog.ws.api.photos.PhotosApplication"
+    },
+    {
+      "type": "java",
+      "name": "AlbumsApplication",
+      "request": "launch",
+      "mainClass": "com.appsdeveloperblog.ws.api.albums.AlbumsApplication"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-DiscoveryServiceApplication<DiscoveryService>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.appsdeveloperblog.ws.api.discoveryservice.DiscoveryServiceApplication",
+      "projectName": "DiscoveryService",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.luisjavm3.api_gateway.ApiGatewayApplication",
+      "projectName": "api-gateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ResourceServerApplication<resource-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "co.luisjavm3.resource_server.ResourceServerApplication",
+      "projectName": "resource-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PhotosApplication<photos-resource-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.appsdeveloperblog.ws.api.photos.PhotosApplication",
+      "projectName": "photos-resource-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AlbumsApplication<albums-resource-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.appsdeveloperblog.ws.api.albums.AlbumsApplication",
+      "projectName": "albums-resource-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
